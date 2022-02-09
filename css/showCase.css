@@ -28,10 +28,25 @@ main{
 }
 .pics img:nth-child(n+1):nth-child(-n+2){
     width:36.4vw ;
+    filter: grayscale(1);
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
 }
 .pics img:nth-child(n+3):nth-child(-n+6){
     width: 36.4vw;
+    filter: grayscale(1);
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
 }
+.pics img:nth-child(n+1):nth-child(-n+2):hover{
+    filter: grayscale(0);
+}
+.pics img:nth-child(n+3):nth-child(-n+6):hover{
+    filter: grayscale(0);
+}
+
+
+
 /* ------------ services -------------- */
 .services{
     display: flex;
