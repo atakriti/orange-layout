@@ -24,9 +24,16 @@
 }
 .john,.jane,.mike{
     border: 1px rgb(204, 204, 204) solid;
+    box-shadow: 5px 5px 10px rgb(112, 112, 112);
     width: 32%;
     display: flex;
     flex-direction: column;
     height: 100%;
     gap: 2vh;
+}
+.john-text,.jane-text,.mike-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin-left: 5%;    
 }

@@ -16,17 +16,20 @@
   --side-bar: rgb(238, 81, 20);
 }
 a {
+  padding: 1vh 1vw;
   text-decoration: none;
   color: white;
+  transition: 1s;
 }
+a:hover{
+  background-color: gray;
+  border-radius:10px ;
+}
+
 .main-container {
   font-family: 'Roboto', sans-serif;
   display: grid;
   grid-template-columns: 20vw 3vw 77vw;
   grid-template-rows: 5vh 95vh;
 }
-.end-clip{
-  border: black 1px solid;
-height: 90vh;
-width: 97%;
-}
+
