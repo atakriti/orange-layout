@@ -1,0 +1,53 @@
+main{
+    grid-column: 3/4;
+    grid-row: 2;
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
+}
+.showcase h1{
+    font-size: 4vw;
+}
+.showcase{
+    width: 100%;
+    height: 100%;
+}
+.showcase h3{
+    font-size: 2vw;
+    color: var(--side-bar);
+}
+.showcase .underline{
+    width:3vw ;
+    height: 0.6vh;
+    background-color: var(--side-bar);
+}
+/* ----------- images ----------------- */
+.pics{
+    width: 100%;  
+}
+.pics img:nth-child(n+1):nth-child(-n+2){
+    width:36.4vw ;
+}
+.pics img:nth-child(n+3):nth-child(-n+6){
+    width: 36.4vw;
+}
+/* ------------ services -------------- */
+.services{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 96%;
+    font-size: 1.2vw;
+    line-height: 3vh;
+    padding-top: 5%;
+}
+.services h3{
+    font-size: 2vw;
+    color: var(--side-bar);
+}
+.services .underline{
+    width:3vw ;
+    height: 0.6vh;
+    background-color: var(--side-bar);
+}

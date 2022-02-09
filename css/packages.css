@@ -1,0 +1,89 @@
+.packages {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  width: 96%;
+  font-size: 1.2vw;
+  line-height: 3vh;
+  padding-top: 5%;
+}
+.packages h3 {
+  font-size: 2vw;
+  color: var(--side-bar);
+}
+.packages .underline {
+  width: 3vw;
+  height: 0.6vh;
+  background-color: var(--side-bar);
+}
+/* ..................... main-boxes .................. */
+.main-boxes{
+    display: flex;
+    justify-content: space-between;
+}
+/* ------------ Basic-Box ------------------- */
+.basic-box {
+  border: 1px rgb(190, 190, 190) solid;
+  width: 47%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+}
+.basic-box > b {
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  padding: 3vh 0vw;
+  font-size: 2vw;
+
+}
+.basic-box > span {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.basic-box-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+.basic-box-btn > button {
+  padding: 2vh 2vw;
+  border: none;
+  cursor: pointer;
+}
+/* ................. pro-basic ................ */
+.pro-box {
+    border: 1px rgb(190, 190, 190) solid;
+    width: 47%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+  }
+  .pro-box > b {
+    display: flex;
+    background-color: var(--side-bar);
+    color: white;
+    justify-content: center;
+    padding: 3vh 0vw;
+    font-size: 2vw;
+  }
+  .pro-box > span {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+  }
+  .pro-box-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+  }
+  .pro-box-btn > button {
+    padding: 2vh 2vw;
+    background-color: var(--side-bar);
+    color: white;
+    border: none;
+  }

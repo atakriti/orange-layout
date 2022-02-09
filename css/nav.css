@@ -1,0 +1,31 @@
+nav{
+    background-color: var(--side-bar);
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    height:70% ;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav h3{
+    font-size: 2vw;
+    color: white;
+    width: 70%;
+}
+.nav-ancors{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 70%;
+    height: 60%;
+    /* font-size: 1.6vw; */
+    font-size: 30px;
+
+}
