@@ -24,6 +24,20 @@
     height: 100%;
     gap: 2vh;
 }
+
+/* ...... new added .......... */
+.john img{
+    width: 100%;
+}
+.jane img{
+    width: 100%;
+}
+.mike img{
+    width: 100%;
+}
+/* .......................... */
+
+
 .john-text,.jane-text,.mike-text{
     display: flex;
     flex-direction: column;
