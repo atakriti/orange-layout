@@ -1,20 +1,14 @@
 .contact{
+    /* grid-row: 6/7; */
     display: flex;
     flex-direction: column;
     gap: 2vh;
     width: 96%;
     font-size: 1.2vw;
     line-height: 3vh;
+    padding-top: 2%;
 }
-.contact h3{
-    font-size: 2vw;
-    color: var(--side-bar);
-}
-.contact .underline{
-    width:3vw ;
-    height: 0.6vh;
-    background-color: var(--side-bar);
-}
+
 .contact>form{
     display: flex;
     flex-direction: column;

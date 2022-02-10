@@ -25,10 +25,164 @@ a:hover{
   background-color: gray;
   border-radius:10px ;
 }
+h3{
+  font-size: 2vw;
+  color: var(--side-bar);
+}
+.underline{
+  width:3vw ;
+  height: 0.6vh;
+  background-color: var(--side-bar);
+}
 
 .main-container {
   font-family: 'Roboto', sans-serif;
   display: grid;
   grid-template-columns: 20vw 3vw 77vw;
-  grid-template-rows: 5vh 95vh;
+  /* grid-template-rows: 5vh 130vh 45vh 85vh 90vh 58vh; */
+  grid-template-rows: 5vh 1fr;
+}
+/* ............... Media query max 600............ */
+@media only screen and (max-width:600px) {
+  .main-container{
+    grid-template-rows: 7vh 1fr 50vh;
+  }
+  h1{
+    font-size: 10vw;
+  }
+ 
+  h3{
+    font-size: 5vw;
+  }
+  .underline{
+    width: 7vw;
+  }
+  b{
+    font-size: 3vw;
+  }
+  p{
+    font-size: 3.5vw;
+  }
+  small{
+    font-size: 2.5vw;
+  }
+  /* .......... nav ................ */
+nav{
+  grid-column:1/4 ;
+  grid-row:1/2 ;
+  width: 100%;
+  height: 7vh;
+  position: fixed;
+  z-index: 20;
+}
+.nav{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+ 
+}
+.nav h3{
+width: 40%;
+font-size: 4vw;
+}
+.nav-ancors{
+  display: none;
+}
+/* ................... hamburger6 ................. */
+.hamburger {
+  width: 20%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+.hamburger div {
+  width: 2rem;
+  height: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s ease-in;
+}
+.hamburger:hover div {
+  transform: rotate(360deg);
+}
+/* ............. main ............. */
+main{
+  grid-column: 1/4;
+    grid-row: 2;
+    margin-left: 2%;
+}
+/* ............. designers ............. */
+.Pics-people{
+  flex-wrap: wrap;
+}
+.john,.jane,.mike{
+  width: 49%;
+  height: 50%;
+}
+.mike{
+  margin-left: 25%;
+}
+/* ................  packages  ................. */
+.main-boxes{
+  height: 50vh;
+  flex-direction: column;
+}
+.basic-box,.pro-box{
+  gap: 0.7vh;
+  width: 100%;
+  margin-bottom: 5%;
+}
+.basic-box-btn{
+  height: 20vh;
+}
+.basic-box-btn > button{
+  font-size: 2vw;
+  padding: 2vh 4vw;
+}
+.basic-box>.bold,.pro-box .bold{
+  font-size:4vw ;
+}
+.basic-box p{
+  font-size: 3vw;
+}
+.pro-box-btn{
+  height: 20vh;
+}
+.pro-box-btn > button{
+  font-size: 2vw;
+  padding: 2vh 4vw;
+}
+/* .......... contact .............. */
+.contact{
+  position: relative;
+  top: 40%;
+}
+.contact>form>input{
+  font-size: 3vw;
+}
+.contact>form>label{
+  font-size: 3vw;
+}
+.contact>form>button{
+  font-size: 3vw;
+}
+.contact>form>input::placeholder{
+  font-size: 3vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 }

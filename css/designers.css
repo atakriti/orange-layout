@@ -1,4 +1,5 @@
 .designers{
+    /* grid-row: 4/5; */
     display: flex;
     flex-direction: column;
     gap: 2vh;
@@ -7,15 +8,7 @@
     line-height: 3vh;
     padding-top: 5%;
 }
-.designers h3{
-    font-size: 2vw;
-    color: var(--side-bar);
-}
-.designers .underline{
-    width:3vw ;
-    height: 0.6vh;
-    background-color: var(--side-bar);
-}
+
 .Pics-people{
     display: flex;   
     gap: 1.3vw;

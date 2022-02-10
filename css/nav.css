@@ -1,7 +1,7 @@
 nav{
     background-color: var(--side-bar);
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 2;
     width: 20%;
     height: 100%;
     position: fixed;
@@ -15,7 +15,7 @@ nav{
     align-items: center;
 }
 .nav h3{
-    padding: 1vh 1vw;
+    padding: 3vh 1vw;
     font-size: 2vw;
     color: white;
     width: 70%;

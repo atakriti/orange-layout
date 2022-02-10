@@ -1,4 +1,5 @@
 .packages {
+  /* grid-row: 5/6; */
   display: flex;
   flex-direction: column;
   gap: 2vh;
@@ -7,48 +8,49 @@
   line-height: 3vh;
   padding-top: 5%;
 }
-.packages h3 {
-  font-size: 2vw;
-  color: var(--side-bar);
-}
-.packages .underline {
-  width: 3vw;
-  height: 0.6vh;
-  background-color: var(--side-bar);
-}
+
 /* ..................... main-boxes .................. */
 .main-boxes{
-    display: flex;
-    justify-content: space-between;
+  grid-column:1/4 ;
+  grid-row: 5/6;
+   height: 65vh;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   
 }
 /* ------------ Basic-Box ------------------- */
 .basic-box {
   border: 1px rgb(190, 190, 190) solid;
   width: 47%;
+  height: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 2.5vh;
   box-shadow: 5px 5px 10px rgb(112, 112, 112);
 }
-.basic-box > b {
+.basic-box>.bold {
   display: flex;
   background-color: black;
   color: white;
   justify-content: center;
   padding: 3vh 0vw;
   font-size: 2vw;
-
+}
+.basic-box>p{
+  border-bottom: 1px black solid;
+  line-height: 4vh;
 }
 .basic-box > span {
   display: flex;
   flex-direction: column;
   gap: 1vh;
 }
-.basic-box-btn {
+.basic-box-btn{
   display: flex;
   justify-content: center;
-  margin-bottom: 3%;
+  align-items: center;
 }
 .basic-box-btn > button {
   font-size: 1vw;
@@ -61,22 +63,27 @@
   opacity: 0.5;
 }
 /* ................. pro-basic ................ */
-.pro-box {
+ .pro-box {
     border: 1px rgb(190, 190, 190) solid;
     width: 47%;
+    height: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
     box-shadow: 5px 5px 10px rgb(112, 112, 112);
     gap: 2.5vh;
   }
-  .pro-box > b {
+  .pro-box .bold {
     display: flex;
     background-color: var(--side-bar);
     color: white;
     justify-content: center;
     padding: 3vh 0vw;
     font-size: 2vw;
+  }
+  .pro-box>p{
+    border-bottom: 1px black solid;
+    line-height: 4vh;
   }
   .pro-box > span {
     display: flex;
@@ -86,7 +93,7 @@
   .pro-box-btn {
     display: flex;
     justify-content: center;
-    margin-bottom: 3%;
+    align-items: center;
   }
   .pro-box-btn > button {
     padding: 2vh 2vw;
@@ -99,4 +106,4 @@
   }
   .pro-box-btn > button:hover{
     opacity: 0.5;
-  }
+  } 
