@@ -206,6 +206,10 @@ main{
   }
 }
 /* ............... max 992 .............. */
-@media only screen and (min-width:769px) and (max-width:992px) {
-  
+@media only screen and (min-width:769px) and (max-width:1200px) {
+  .basic-box,.pro-box{
+    gap: 2vh;
+    height: 52vh;
+    gap: 1vh;
+  }
 }
