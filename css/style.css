@@ -43,7 +43,7 @@ h3{
   grid-template-rows: 5vh 1fr;
 }
 /* ............... Media query max 600............ */
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:600px) , (min-width:601px) and (max-width:768px) {
   .main-container{
     grid-template-rows: 7vh 1fr 50vh;
   }
@@ -174,15 +174,38 @@ main{
   font-size: 3vw;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+}
+/* .................. max 768 ............. */
+@media only screen and (min-width:601px) and (max-width:768px) {
+  h1{
+    font-size: 8vw;
+  }
+ 
+  h3{
+    font-size: 3vw;
+  }
+  .underline{
+    width: 7vw;
+  }
+  b{
+    font-size: 3vw;
+  }
+  p{
+    font-size: 3vw;
+  }
+  small{
+    font-size: 2.5vw;
+  }
+  
+  .basic-box,.pro-box{
+    gap: 2vh;
+    height: 60vh;
+  }
+  .contact{
+    top: 60%;
+  }
+}
+/* ............... max 992 .............. */
+@media only screen and (min-width:769px) and (max-width:992px) {
+  
 }
