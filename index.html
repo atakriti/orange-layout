@@ -9,18 +9,27 @@
     <title>Orange-Design</title>
   </head>
   <body>
+    
     <div class="main-container">
+      <div id="menuBox" class="dropmenu">
+        <a href="#">Home</a>
+              <a href="#showcase-id">Showcase</a>
+              <a href="#services-id">Services</a>
+              <a href="#designers-id">Designers</a>
+              <a href="#packages-id">Packages</a>
+              <a href="#contact-id">Contact</a>
+      </div>
       <!-- ................. Nav ................ -->
       <nav>
         <div class="nav">
           <h3>Company Name</h3>
-          <div class="hamburger">
+          <div onclick="showMenu()" class="hamburger">
             <div></div>
             <div></div>
            <div></div>
           </div>
           <div class="nav-ancors">
-            <a href="#"><i class="fas fa-home"></i>Home</a>
+            <a href="#">Home</a>
             <a href="#showcase-id">Showcase</a>
             <a href="#services-id">Services</a>
             <a href="#designers-id">Designers</a>
@@ -175,5 +184,20 @@
 
       </main>
     </div>
+
+    <script>
+      // will happen one tine only
+      menuBox.style.display = "none";
+      //  will be called any time you click on the btn
+      const showMenu = () => {
+        if (menuBox.style.display == "none") {
+          menuBox.style.animationName = "dropdown-menu-move";
+          menuBox.style.display = "block";
+        } else {
+          menuBox.style.animationName = "go-up-menu-move";
+          setTimeout(() => (menuBox.style.display = "none"), 300);
+        }
+      };
+    </script> -->
   </body>
 </html>

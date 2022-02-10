@@ -15,7 +15,7 @@ nav{
     align-items: center;
 }
 .nav h3{
-    padding: 3vh 1vw;
+    padding: 2vh 1vw;
     font-size: 2vw;
     color: white;
     width: 70%;
@@ -28,5 +28,4 @@ nav{
     height: 60%;
     /* font-size: 1.6vw; */
     font-size: 2vw;
-
 }

@@ -20,13 +20,13 @@ h1{
     width: 100%;  
 }
 .pics img:nth-child(n+1):nth-child(-n+2){
-    width:49% ;
+    width:48% ;
     filter: grayscale(1);
     transition: 0.5s all ease-in-out;
     cursor: pointer;
 }
 .pics img:nth-child(n+3):nth-child(-n+6){
-    width: 49%;
+    width: 48%;
     filter: grayscale(1);
     transition: 0.5s all ease-in-out;
     cursor: pointer;
